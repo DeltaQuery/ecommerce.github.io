@@ -1,0 +1,98 @@
+@import "../../index.css";
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    /*background-color: var(--main-blue);
+    background: linear-gradient(270.03deg, #00E0D2 0.06%, #06304C 72.91%);*/
+    background: linear-gradient(269.88deg, #009C92 -2.51%, #06304C 51.96%);
+    z-index: 20;
+    color: white;
+}
+
+.navText {
+    display: none;
+    font-size: var(--h4-size);
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.navbarLeft {
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.cartLinkContainer {
+    margin-right: 3%;
+    position: relative;
+}
+
+.cartQuantity {
+    position: absolute;
+    background-color: var(--main-gold);
+    color: black;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1px;
+    left: 22px;
+}
+
+.navbarRight {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+}
+
+.menuIconContainer {
+    cursor: pointer;
+}
+
+.menuIconContainer, .searchInputContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 6px;
+}
+
+.searchInput {
+    max-width: 460px;
+    width: 48vw;
+    height: 40px;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 38px;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 10px;
+}
+
+
+.logoPicture .logoImg {
+    display: block;
+}
+
+@media (min-width: 600px) {
+    nav {
+        height: 72px;
+    }
+
+    .navText {
+        display: block;
+    }
+}

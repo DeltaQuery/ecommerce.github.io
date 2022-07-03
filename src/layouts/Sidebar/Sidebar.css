@@ -1,0 +1,100 @@
+@import "../../index.css";
+
+.sidebarContainer {
+    position: fixed;
+    height: calc(100vh - 60px);
+    overflow-x: scroll;
+    max-width: 360px;
+    width: 100%;
+    transition: all .5s ease;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+    clip-path: inset(0px -20px 0px 0px);
+    overflow-y: scroll;
+}
+
+.sidebarHidden {
+    left: -2000px;
+}
+
+.sidebarDisplayed {
+    left: 0;
+}
+
+.sidebarOptionsMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dealsContainer, .categoriesContainer {
+    margin-top: 10px;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--med-gray);
+    border-radius: 6px;
+}
+
+.dealsContainer .dealsLink {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 45px;
+    color: var(--main-blue);
+    font-size: var(--reg-size);
+    font-weight: 600;
+}
+
+.dealsContainer {
+    position: relative;
+}
+
+.closeSidebarIcon {
+    position: absolute;
+    top: 10px;
+    right: 4%;
+}
+
+.categoriesContainer {
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.categoriesContainer div:first-child {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: var(--reg-size);
+    font-weight: 600;
+    color: var(--main-blue);
+}
+
+.categoriesContainer .categoryLink {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 6px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--main-blue);
+}
+
+.nextIcon {
+    font-size: 22px;
+    color: var(--main-blue);
+}
+
+.categoriesContainer .categoryLink:hover, .dealsLink {
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .sidebarContainer {
+        height: calc(100vh - 72px);
+    }
+}

@@ -1,0 +1,8 @@
+.igBoxContainer {
+    grid-gap: 20px !important;
+}
+
+.igBox > a > img {
+    width: 100%;
+    height: 100%;
+}

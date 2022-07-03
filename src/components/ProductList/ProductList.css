@@ -1,0 +1,31 @@
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.productsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.productList {
+    width: 100%;
+}
+
+.listTitleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--med-gray);
+}
+
+.moreLink, .listTitleContainer a {
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+}

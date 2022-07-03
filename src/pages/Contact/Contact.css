@@ -1,0 +1,88 @@
+.contactContent {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.contactTitleContent {
+    border: none !important;
+}
+
+.contactTitleContent a {
+    position: absolute;
+}
+
+.contactTitleContent a {
+    position: absolute;
+}
+
+.contactTitleContent h4 {
+    margin: auto;
+}
+
+.cartContent form {
+    margin: auto;
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.cartContent form section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--med-gray);
+}
+
+.cartContent form section input[type=text],
+.cartContent form section input[type=email] {
+    margin-top: 2px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid var(--med-gray);
+    padding-left: 4px;
+}
+
+.cartContent form section:first-child label,
+.cartContent form section:nth-child(4) label {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartContent form section:nth-child(4) label:last-child {
+    flex-direction: row;
+}
+
+.cartContent form section:nth-child(2) label,
+.cartContent form section:nth-child(3) label,
+.direccionMasTarde {
+    display: flex;
+    gap: 4px;
+}
+
+.cartContent form section:last-child p {
+    text-align: justify;
+    color: var(--dark-gray);
+}
+
+.pickupP {
+    margin-top: -4px;
+    margin-bottom: 4px;
+    text-align: justify;
+    font-size: 13px;
+    color: var(--dark-gray);
+}
+
+.pickupP a {
+    font-size: 13px;
+}
+
+
+@media (min-width: 600px) {
+    .contactTitleContent {
+        border: none !important;
+        padding-bottom: 0px;
+    }
+}
