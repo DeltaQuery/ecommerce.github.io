@@ -11,6 +11,7 @@ import ramCorsair from "../assets/productsImages/ram/ramcorsairddr4.jpg"
 import kingston240gb from "../assets/productsImages/ssd/kingston240gb.png"
 import fireStick4k from "../assets/productsImages/streaming/firestick4k.jpg"
 import switchOled from "../assets/productsImages/gaming/switcholed.jpg"
+import xboxs from "../assets/productsImages/gaming/xboxs.jpg"
 
 export const productArr = [
     {
@@ -171,10 +172,10 @@ export const productArr = [
         _id: "6",
         name: "Tablet Fire 7 Kids Forro Azul",
         category: [
-            1
+            11
         ],
-        price: 70.99,
-        discountedPrice: 74.99,
+        price: 74.99,
+        discountedPrice: 70.99,
         discount: "-10%",
         discountedPriceWith: null,
         discountWith: null,
@@ -243,7 +244,7 @@ export const productArr = [
         _id: "8",
         name: "Laptop Acer 15.6 AMD Ryzen 7 8GB 512GB SSD",
         category: [
-            1
+            2
         ],
         price: 32.99,
         discountedPrice: 29.99,
@@ -605,6 +606,35 @@ export const productArr = [
             razerMouse,
             razerMouse,
             razerMouse
+        ],
+        model: null,
+        models: {},
+        boughtWith: [],
+        stock: 25,
+        date: new Date()
+    },
+    {
+        _id: "19",
+        name: "Xbox Series S",
+        category: [
+            10, 50, 51, 52
+        ],
+        price: 439.99,
+        discountedPrice: 379.99,
+        discount: null,
+        discountedPriceWith: null,
+        discountWith: null,
+        features: [
+            "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+            "LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+            "CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+            "GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+            "FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)"
+        ],
+        images: [
+            xboxs,
+            xboxs,
+            xboxs
         ],
         model: null,
         models: {},

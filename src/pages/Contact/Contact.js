@@ -17,7 +17,6 @@ export const Contact = () => {
         let cartInfoString = cartInfo.join().replace(/\s/g, "%20")
         e.preventDefault()
         let radioButtons = Object.values(e.target).filter((input) => input.checked)
-        console.log(state.cart)
         window.open(
             `https://api.whatsapp.com/send?phone=584246114465&text=
             %0A*@marateca.ve*

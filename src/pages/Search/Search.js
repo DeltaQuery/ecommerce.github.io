@@ -14,14 +14,14 @@ import { IgBox } from '../../components/IgBox/IgBox'
 
 export const Search = () => {
     const { id } = useParams()
+    const params = id.split("=")
     const navigate = useNavigate()
     const [searchedProducts, setSearchedProducts] = React.useState()
     const [typeOfSearch, setTypeOfSearch] = React.useState([])
 
     React.useEffect(() => {
-        const params = id.split("=")
         if (params[0] === "category") {
-            const category = categoriesArr.filter(x => x.categoryId == params[1])
+            const category = categoriesArr.filter(x => x.categoryId === Number(params[1]))
             if (category.length === 0) {
                 setTypeOfSearch([params[0], null, false])
                 setSearchedProducts([])
@@ -31,7 +31,7 @@ export const Search = () => {
                     setSearchedProducts(productArr.filter(x => x.discountedPrice))
                 } else {
                     setTypeOfSearch([params[0], category[0].category, true])
-                    setSearchedProducts(productArr.filter(x => x.category.some(g => params[1].includes(g))))
+                    setSearchedProducts(productArr.filter(x => x.category.some(g => params[1] == g)))
                 }
             }
         } else if (params[0] === "value") {
@@ -95,12 +95,13 @@ export const Search = () => {
             <img src={sampleBanner} loading="lazy"></img>
 
             <ProductList
-                listTitle="¡Más vendidos! 🤯">
-                <Product
-                    slides={4}
-                    listTitle="masVendidos"
-                />
-            </ProductList>
+            listTitle={params[1] == 50 ? "¡Más vendidos! 🤯" : "¡Ofertas! ⏰"}
+            category={params[1] == 50 ? 53 : 50}
+          >
+            <Product
+              slides={4}
+            />
+          </ProductList>
 
             <CategoriesBox 
             listTitle="Categorías"/>

@@ -2,12 +2,12 @@ import React from 'react'
 import { BiCart } from "react-icons/bi"
 import AppContext from '../../context/AppContext'
 import { Product } from '../../components/Product/Product'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import "./AddedToCart.css"
 
 export const AddedToCart = () => {
     const { showAddedToCart, setShowAddedToCart, setShowSidebar, lastAddedProduct } = React.useContext(AppContext)
-
+    const navigate = useNavigate()
     const location = useLocation()
     React.useEffect(() => {
         setShowAddedToCart(false)
@@ -16,6 +16,10 @@ export const AddedToCart = () => {
     const closeAddedToCart = () => {
         setShowAddedToCart(false)
         setShowSidebar(false)
+    }
+
+    const goToCart = () => {
+        navigate(`/cart`)
     }
 
     return (
@@ -48,7 +52,8 @@ export const AddedToCart = () => {
                     />
                   } 
                     
-                    <button className="addToCartButton addedToCartButton">
+                    <button className="addToCartButton addedToCartButton"
+                    onClick={goToCart}>
                         Ir al Carrito
                     </button>
 
