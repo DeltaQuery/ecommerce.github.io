@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecommerce.github.io/static/css/main.067d4ccb.css",
-    "main.js": "/ecommerce.github.io/static/js/main.3218661a.js",
+    "main.js": "/ecommerce.github.io/static/js/main.b3e451b5.js",
     "static/media/almacenamiento.png": "/ecommerce.github.io/static/media/almacenamiento.d1ceef0af71a9bb49409.png",
     "static/media/prueba.png": "/ecommerce.github.io/static/media/prueba.76608b0341c106ea0703.png",
     "static/media/roku express.png": "/ecommerce.github.io/static/media/roku express.fb3df9b15a1cea4bcf4c.png",
@@ -17,6 +17,7 @@
     "static/media/laptops.png": "/ecommerce.github.io/static/media/laptops.29b7b45fea043dd444f8.png",
     "static/media/ramcorsairddr4.jpg": "/ecommerce.github.io/static/media/ramcorsairddr4.d22a05451e58c3043e1d.jpg",
     "static/media/fancooler.png": "/ecommerce.github.io/static/media/fancooler.c463d3d8240e5aa14b3e.png",
+    "static/media/xboxs.jpg": "/ecommerce.github.io/static/media/xboxs.44204a50718cbf99651c.jpg",
     "static/media/ssd.png": "/ecommerce.github.io/static/media/ssd.0ddad4571f0234df12c4.png",
     "static/media/toshiba.jpg": "/ecommerce.github.io/static/media/toshiba.bac07924ac48f74e6a6c.jpg",
     "static/media/switcholed.jpg": "/ecommerce.github.io/static/media/switcholed.5a9002c64f07b0a4447c.jpg",
@@ -38,10 +39,10 @@
     "static/media/beforeIco.svg": "/ecommerce.github.io/static/media/beforeIco.2cfc799d3c94afb75a91.svg",
     "static/media/nextIco.svg": "/ecommerce.github.io/static/media/nextIco.b647e29a9faaff887357.svg",
     "main.067d4ccb.css.map": "/ecommerce.github.io/static/css/main.067d4ccb.css.map",
-    "main.3218661a.js.map": "/ecommerce.github.io/static/js/main.3218661a.js.map"
+    "main.b3e451b5.js.map": "/ecommerce.github.io/static/js/main.b3e451b5.js.map"
   },
   "entrypoints": [
     "static/css/main.067d4ccb.css",
-    "static/js/main.3218661a.js"
+    "static/js/main.b3e451b5.js"
   ]
 }
