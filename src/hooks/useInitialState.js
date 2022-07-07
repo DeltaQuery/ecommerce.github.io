@@ -5,7 +5,7 @@ const initialState = {
 }
 
 export const useInitialState = () => {
-  const cartFromLocalStorage = JSON.parse(localStorage.getItem("Carrito") || initialState)
+  const cartFromLocalStorage = JSON.parse(localStorage.getItem("Carrito")) || initialState
   const [state, setState] = React.useState(cartFromLocalStorage)
   const [showSidebar, setShowSidebar] = React.useState(false)
   const [showAddedToCart, setShowAddedToCart] = React.useState(false)
